@@ -1,16 +1,27 @@
 <html>
     <head>
-        <!-- reset -->
+        <!-- css reset -->
         <style>*,::after,::before{box-sizing:border-box}*{margin:0}@media (prefers-reduced-motion:no-preference){html{interpolate-size:allow-keywords}}body{line-height:1.5;-webkit-font-smoothing:antialiased}canvas,img,picture,svg,video{display:block;max-width:100%}button,input,select,textarea{font:inherit}h1,h2,h3,h4,h5,h6,p{overflow-wrap:break-word}p{text-wrap:pretty}h1,h2,h3,h4,h5,h6{text-wrap:balance}#__next,#root{isolation:isolate}</style>
-        <style>iframe {
-            height:calc(100vh - 4px);
-            width:calc(100vw - 4px);
-            box-sizing: border-box;
-          }
-          </style>
+        <!-- custom css -->
+        <style>iframe {height:calc(100vh - 4px);width:calc(100vw - 4px);box-sizing: border-box;}</style>
+        <!-- creative id url param for future proofing -->
+        <script type="text/javascript">
+            function getUrlParameter(name) {
+            name = name.replace(/[\[\]]/g, '\\$&');
+            const regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+                results = regex.exec(window.location.href);
+            if (!results) return null;
+            if (!results[2]) return '';
+            return decodeURIComponent(results[2].replace(/\+/g, ' '));
+            }
+            const cid = getUrlParameter('cid');
+            if (cid == '864elite13u') {
+                console.log(cid);
+                //window.location.href = 'https://google.com';
+            }
+        </script>
     </head>
     <body>
         <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1086148765?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&autoplay=1&muted=1&playsinline=0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="864 Elite 13U Highlights"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
     </body>
 </html>
-
